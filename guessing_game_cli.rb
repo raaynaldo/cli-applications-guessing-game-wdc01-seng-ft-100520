@@ -1,5 +1,12 @@
 # Code your solution here!
 def run_guessing_game
   number = rand(1..6)
-  input = gets.to_i
+  input = gets.chomp
+  if input.to_i() == number
+    puts "You guessed the correct number!"
+  elsif input.to_i() != number
+    puts "Sorry! The computer guessed #{number}"
+  elsif input == "exit"
+
+
 end
